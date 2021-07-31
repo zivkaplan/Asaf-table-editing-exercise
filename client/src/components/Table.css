@@ -1,0 +1,12 @@
+.flexTable {
+    padding: 1em 1em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.flexTable > * {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
