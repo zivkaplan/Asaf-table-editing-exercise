@@ -1,0 +1,973 @@
+{
+    "countries": [
+        {
+            "countryName": "Andorra",
+            "capital": "Andorra la Vella"
+        },
+        {
+            "countryName": "United Arab Emirates",
+            "capital": "Abu Dhabi"
+        },
+        {
+            "countryName": "Afghanistan",
+            "capital": "Kabul"
+        },
+        {
+            "countryName": "Antigua and Barbuda",
+            "capital": "St John's"
+        },
+        {
+            "countryName": "Anguilla",
+            "capital": "The Valley"
+        },
+        {
+            "countryName": "Albania",
+            "capital": "Tirana"
+        },
+        {
+            "countryName": "Armenia",
+            "capital": "Yerevan"
+        },
+        {
+            "countryName": "Angola",
+            "capital": "Luanda"
+        },
+        {
+            "countryName": "Argentina",
+            "capital": "Buenos Aires"
+        },
+        {
+            "countryName": "American Samoa",
+            "capital": "Pago Pago"
+        },
+        {
+            "countryName": "Austria",
+            "capital": "Vienna"
+        },
+        {
+            "countryName": "Australia",
+            "capital": "Canberra"
+        },
+        {
+            "countryName": "Aruba",
+            "capital": "Oranjestad"
+        },
+        {
+            "countryName": "Åland",
+            "capital": "Mariehamn"
+        },
+        {
+            "countryName": "Azerbaijan",
+            "capital": "Baku"
+        },
+        {
+            "countryName": "Bosnia and Herzegovina",
+            "capital": "Sarajevo"
+        },
+        {
+            "countryName": "Barbados",
+            "capital": "Bridgetown"
+        },
+        {
+            "countryName": "Bangladesh",
+            "capital": "Dhaka"
+        },
+        {
+            "countryName": "Belgium",
+            "capital": "Brussels"
+        },
+        {
+            "countryName": "Burkina Faso",
+            "capital": "Ouagadougou"
+        },
+        {
+            "countryName": "Bulgaria",
+            "capital": "Sofia"
+        },
+        {
+            "countryName": "Bahrain",
+            "capital": "Manama"
+        },
+        {
+            "countryName": "Burundi",
+            "capital": "Gitega"
+        },
+        {
+            "countryName": "Benin",
+            "capital": "Porto-Novo"
+        },
+        {
+            "countryName": "Saint Barthélemy",
+            "capital": "Gustavia"
+        },
+        {
+            "countryName": "Bermuda",
+            "capital": "Hamilton"
+        },
+        {
+            "countryName": "Brunei",
+            "capital": "Bandar Seri Begawan"
+        },
+        {
+            "countryName": "Bolivia",
+            "capital": "Sucre"
+        },
+        {
+            "countryName": "Bonaire, Sint Eustatius, and Saba",
+            "capital": "Kralendijk"
+        },
+        {
+            "countryName": "Brazil",
+            "capital": "Brasília"
+        },
+        {
+            "countryName": "Bahamas",
+            "capital": "Nassau"
+        },
+        {
+            "countryName": "Bhutan",
+            "capital": "Thimphu"
+        },
+        {
+            "countryName": "Botswana",
+            "capital": "Gaborone"
+        },
+        {
+            "countryName": "Belarus",
+            "capital": "Minsk"
+        },
+        {
+            "countryName": "Belize",
+            "capital": "Belmopan"
+        },
+        {
+            "countryName": "Canada",
+            "capital": "Ottawa"
+        },
+        {
+            "countryName": "Cocos [Keeling] Islands",
+            "capital": "West Island"
+        },
+        {
+            "countryName": "DR Congo",
+            "capital": "Kinshasa"
+        },
+        {
+            "countryName": "Central African Republic",
+            "capital": "Bangui"
+        },
+        {
+            "countryName": "Congo Republic",
+            "capital": "Brazzaville"
+        },
+        {
+            "countryName": "Switzerland",
+            "capital": "Bern"
+        },
+        {
+            "countryName": "Ivory Coast",
+            "capital": "Yamoussoukro"
+        },
+        {
+            "countryName": "Cook Islands",
+            "capital": "Avarua"
+        },
+        {
+            "countryName": "Chile",
+            "capital": "Santiago"
+        },
+        {
+            "countryName": "Cameroon",
+            "capital": "Yaoundé"
+        },
+        {
+            "countryName": "China",
+            "capital": "Beijing"
+        },
+        {
+            "countryName": "Colombia",
+            "capital": "Bogotá"
+        },
+        {
+            "countryName": "Costa Rica",
+            "capital": "San José"
+        },
+        {
+            "countryName": "Cuba",
+            "capital": "Havana"
+        },
+        {
+            "countryName": "Cabo Verde",
+            "capital": "Praia"
+        },
+        {
+            "countryName": "Curaçao",
+            "capital": "Willemstad"
+        },
+        {
+            "countryName": "Christmas Island",
+            "capital": "Flying Fish Cove"
+        },
+        {
+            "countryName": "Cyprus",
+            "capital": "Nicosia"
+        },
+        {
+            "countryName": "Czechia",
+            "capital": "Prague"
+        },
+        {
+            "countryName": "Germany",
+            "capital": "Berlin"
+        },
+        {
+            "countryName": "Djibouti",
+            "capital": "Djibouti"
+        },
+        {
+            "countryName": "Denmark",
+            "capital": "Copenhagen"
+        },
+        {
+            "countryName": "Dominica",
+            "capital": "Roseau"
+        },
+        {
+            "countryName": "Dominican Republic",
+            "capital": "Santo Domingo"
+        },
+        {
+            "countryName": "Algeria",
+            "capital": "Algiers"
+        },
+        {
+            "countryName": "Ecuador",
+            "capital": "Quito"
+        },
+        {
+            "countryName": "Estonia",
+            "capital": "Tallinn"
+        },
+        {
+            "countryName": "Egypt",
+            "capital": "Cairo"
+        },
+        {
+            "countryName": "Eritrea",
+            "capital": "Asmara"
+        },
+        {
+            "countryName": "Spain",
+            "capital": "Madrid"
+        },
+        {
+            "countryName": "Ethiopia",
+            "capital": "Addis Ababa"
+        },
+        {
+            "countryName": "Finland",
+            "capital": "Helsinki"
+        },
+        {
+            "countryName": "Fiji",
+            "capital": "Suva"
+        },
+        {
+            "countryName": "Falkland Islands",
+            "capital": "Stanley"
+        },
+        {
+            "countryName": "Micronesia",
+            "capital": "Palikir"
+        },
+        {
+            "countryName": "Faroe Islands",
+            "capital": "Tórshavn"
+        },
+        {
+            "countryName": "France",
+            "capital": "Paris"
+        },
+        {
+            "countryName": "Gabon",
+            "capital": "Libreville"
+        },
+        {
+            "countryName": "United Kingdom",
+            "capital": "London"
+        },
+        {
+            "countryName": "Grenada",
+            "capital": "St. George's"
+        },
+        {
+            "countryName": "Georgia",
+            "capital": "Tbilisi"
+        },
+        {
+            "countryName": "French Guiana",
+            "capital": "Cayenne"
+        },
+        {
+            "countryName": "Guernsey",
+            "capital": "St Peter Port"
+        },
+        {
+            "countryName": "Ghana",
+            "capital": "Accra"
+        },
+        {
+            "countryName": "Gibraltar",
+            "capital": "Gibraltar"
+        },
+        {
+            "countryName": "Greenland",
+            "capital": "Nuuk"
+        },
+        {
+            "countryName": "Gambia",
+            "capital": "Banjul"
+        },
+        {
+            "countryName": "Guinea",
+            "capital": "Conakry"
+        },
+        {
+            "countryName": "Guadeloupe",
+            "capital": "Basse-Terre"
+        },
+        {
+            "countryName": "Equatorial Guinea",
+            "capital": "Malabo"
+        },
+        {
+            "countryName": "Greece",
+            "capital": "Athens"
+        },
+        {
+            "countryName": "South Georgia and South Sandwich Islands",
+            "capital": "Grytviken"
+        },
+        {
+            "countryName": "Guatemala",
+            "capital": "Guatemala City"
+        },
+        {
+            "countryName": "Guam",
+            "capital": "Hagåtña"
+        },
+        {
+            "countryName": "Guinea-Bissau",
+            "capital": "Bissau"
+        },
+        {
+            "countryName": "Guyana",
+            "capital": "Georgetown"
+        },
+        {
+            "countryName": "Hong Kong",
+            "capital": "Hong Kong"
+        },
+        {
+            "countryName": "Honduras",
+            "capital": "Tegucigalpa"
+        },
+        {
+            "countryName": "Croatia",
+            "capital": "Zagreb"
+        },
+        {
+            "countryName": "Haiti",
+            "capital": "Port-au-Prince"
+        },
+        {
+            "countryName": "Hungary",
+            "capital": "Budapest"
+        },
+        {
+            "countryName": "Indonesia",
+            "capital": "Jakarta"
+        },
+        {
+            "countryName": "Ireland",
+            "capital": "Dublin"
+        },
+        {
+            "countryName": "Israel",
+            "capital": "Jerusalem"
+        },
+        {
+            "countryName": "Isle of Man",
+            "capital": "Douglas"
+        },
+        {
+            "countryName": "India",
+            "capital": "New Delhi"
+        },
+        {
+            "countryName": "Iraq",
+            "capital": "Baghdad"
+        },
+        {
+            "countryName": "Iran",
+            "capital": "Tehran"
+        },
+        {
+            "countryName": "Iceland",
+            "capital": "Reykjavik"
+        },
+        {
+            "countryName": "Italy",
+            "capital": "Rome"
+        },
+        {
+            "countryName": "Jersey",
+            "capital": "Saint Helier"
+        },
+        {
+            "countryName": "Jamaica",
+            "capital": "Kingston"
+        },
+        {
+            "countryName": "Jordan",
+            "capital": "Amman"
+        },
+        {
+            "countryName": "Japan",
+            "capital": "Tokyo"
+        },
+        {
+            "countryName": "Kenya",
+            "capital": "Nairobi"
+        },
+        {
+            "countryName": "Kyrgyzstan",
+            "capital": "Bishkek"
+        },
+        {
+            "countryName": "Cambodia",
+            "capital": "Phnom Penh"
+        },
+        {
+            "countryName": "Kiribati",
+            "capital": "Tarawa"
+        },
+        {
+            "countryName": "Comoros",
+            "capital": "Moroni"
+        },
+        {
+            "countryName": "St Kitts and Nevis",
+            "capital": "Basseterre"
+        },
+        {
+            "countryName": "North Korea",
+            "capital": "Pyongyang"
+        },
+        {
+            "countryName": "South Korea",
+            "capital": "Seoul"
+        },
+        {
+            "countryName": "Kuwait",
+            "capital": "Kuwait City"
+        },
+        {
+            "countryName": "Cayman Islands",
+            "capital": "George Town"
+        },
+        {
+            "countryName": "Kazakhstan",
+            "capital": "Nur-Sultan"
+        },
+        {
+            "countryName": "Laos",
+            "capital": "Vientiane"
+        },
+        {
+            "countryName": "Lebanon",
+            "capital": "Beirut"
+        },
+        {
+            "countryName": "Saint Lucia",
+            "capital": "Castries"
+        },
+        {
+            "countryName": "Liechtenstein",
+            "capital": "Vaduz"
+        },
+        {
+            "countryName": "Sri Lanka",
+            "capital": "Colombo"
+        },
+        {
+            "countryName": "Liberia",
+            "capital": "Monrovia"
+        },
+        {
+            "countryName": "Lesotho",
+            "capital": "Maseru"
+        },
+        {
+            "countryName": "Lithuania",
+            "capital": "Vilnius"
+        },
+        {
+            "countryName": "Luxembourg",
+            "capital": "Luxembourg"
+        },
+        {
+            "countryName": "Latvia",
+            "capital": "Riga"
+        },
+        {
+            "countryName": "Libya",
+            "capital": "Tripoli"
+        },
+        {
+            "countryName": "Morocco",
+            "capital": "Rabat"
+        },
+        {
+            "countryName": "Monaco",
+            "capital": "Monaco"
+        },
+        {
+            "countryName": "Moldova",
+            "capital": "Chișinău"
+        },
+        {
+            "countryName": "Montenegro",
+            "capital": "Podgorica"
+        },
+        {
+            "countryName": "Saint Martin",
+            "capital": "Marigot"
+        },
+        {
+            "countryName": "Madagascar",
+            "capital": "Antananarivo"
+        },
+        {
+            "countryName": "Marshall Islands",
+            "capital": "Majuro"
+        },
+        {
+            "countryName": "North Macedonia",
+            "capital": "Skopje"
+        },
+        {
+            "countryName": "Mali",
+            "capital": "Bamako"
+        },
+        {
+            "countryName": "Myanmar",
+            "capital": "Nay Pyi Taw"
+        },
+        {
+            "countryName": "Mongolia",
+            "capital": "Ulaanbaatar"
+        },
+        {
+            "countryName": "Macao",
+            "capital": "Macao"
+        },
+        {
+            "countryName": "Northern Mariana Islands",
+            "capital": "Saipan"
+        },
+        {
+            "countryName": "Martinique",
+            "capital": "Fort-de-France"
+        },
+        {
+            "countryName": "Mauritania",
+            "capital": "Nouakchott"
+        },
+        {
+            "countryName": "Montserrat",
+            "capital": "Plymouth"
+        },
+        {
+            "countryName": "Malta",
+            "capital": "Valletta"
+        },
+        {
+            "countryName": "Mauritius",
+            "capital": "Port Louis"
+        },
+        {
+            "countryName": "Maldives",
+            "capital": "Malé"
+        },
+        {
+            "countryName": "Malawi",
+            "capital": "Lilongwe"
+        },
+        {
+            "countryName": "Mexico",
+            "capital": "Mexico City"
+        },
+        {
+            "countryName": "Malaysia",
+            "capital": "Kuala Lumpur"
+        },
+        {
+            "countryName": "Mozambique",
+            "capital": "Maputo"
+        },
+        {
+            "countryName": "Namibia",
+            "capital": "Windhoek"
+        },
+        {
+            "countryName": "New Caledonia",
+            "capital": "Noumea"
+        },
+        {
+            "countryName": "Niger",
+            "capital": "Niamey"
+        },
+        {
+            "countryName": "Norfolk Island",
+            "capital": "Kingston"
+        },
+        {
+            "countryName": "Nigeria",
+            "capital": "Abuja"
+        },
+        {
+            "countryName": "Nicaragua",
+            "capital": "Managua"
+        },
+        {
+            "countryName": "Netherlands",
+            "capital": "Amsterdam"
+        },
+        {
+            "countryName": "Norway",
+            "capital": "Oslo"
+        },
+        {
+            "countryName": "Nepal",
+            "capital": "Kathmandu"
+        },
+        {
+            "countryName": "Nauru",
+            "capital": "Yaren District"
+        },
+        {
+            "countryName": "Niue",
+            "capital": "Alofi"
+        },
+        {
+            "countryName": "New Zealand",
+            "capital": "Wellington"
+        },
+        {
+            "countryName": "Oman",
+            "capital": "Muscat"
+        },
+        {
+            "countryName": "Panama",
+            "capital": "Panama City"
+        },
+        {
+            "countryName": "Peru",
+            "capital": "Lima"
+        },
+        {
+            "countryName": "French Polynesia",
+            "capital": "Papeete"
+        },
+        {
+            "countryName": "Papua New Guinea",
+            "capital": "Port Moresby"
+        },
+        {
+            "countryName": "Philippines",
+            "capital": "Manila"
+        },
+        {
+            "countryName": "Pakistan",
+            "capital": "Islamabad"
+        },
+        {
+            "countryName": "Poland",
+            "capital": "Warsaw"
+        },
+        {
+            "countryName": "Saint Pierre and Miquelon",
+            "capital": "Saint-Pierre"
+        },
+        {
+            "countryName": "Pitcairn Islands",
+            "capital": "Adamstown"
+        },
+        {
+            "countryName": "Puerto Rico",
+            "capital": "San Juan"
+        },
+        {
+            "countryName": "Portugal",
+            "capital": "Lisbon"
+        },
+        {
+            "countryName": "Palau",
+            "capital": "Ngerulmud"
+        },
+        {
+            "countryName": "Paraguay",
+            "capital": "Asunción"
+        },
+        {
+            "countryName": "Qatar",
+            "capital": "Doha"
+        },
+        {
+            "countryName": "Réunion",
+            "capital": "Saint-Denis"
+        },
+        {
+            "countryName": "Romania",
+            "capital": "Bucharest"
+        },
+        {
+            "countryName": "Serbia",
+            "capital": "Belgrade"
+        },
+        {
+            "countryName": "Russia",
+            "capital": "Moscow"
+        },
+        {
+            "countryName": "Rwanda",
+            "capital": "Kigali"
+        },
+        {
+            "countryName": "Saudi Arabia",
+            "capital": "Riyadh"
+        },
+        {
+            "countryName": "Solomon Islands",
+            "capital": "Honiara"
+        },
+        {
+            "countryName": "Seychelles",
+            "capital": "Victoria"
+        },
+        {
+            "countryName": "Sudan",
+            "capital": "Khartoum"
+        },
+        {
+            "countryName": "Sweden",
+            "capital": "Stockholm"
+        },
+        {
+            "countryName": "Singapore",
+            "capital": "Singapore"
+        },
+        {
+            "countryName": "Saint Helena",
+            "capital": "Jamestown"
+        },
+        {
+            "countryName": "Slovenia",
+            "capital": "Ljubljana"
+        },
+        {
+            "countryName": "Svalbard and Jan Mayen",
+            "capital": "Longyearbyen"
+        },
+        {
+            "countryName": "Slovakia",
+            "capital": "Bratislava"
+        },
+        {
+            "countryName": "Sierra Leone",
+            "capital": "Freetown"
+        },
+        {
+            "countryName": "San Marino",
+            "capital": "San Marino"
+        },
+        {
+            "countryName": "Senegal",
+            "capital": "Dakar"
+        },
+        {
+            "countryName": "Somalia",
+            "capital": "Mogadishu"
+        },
+        {
+            "countryName": "Suriname",
+            "capital": "Paramaribo"
+        },
+        {
+            "countryName": "South Sudan",
+            "capital": "Juba"
+        },
+        {
+            "countryName": "São Tomé and Príncipe",
+            "capital": "São Tomé"
+        },
+        {
+            "countryName": "El Salvador",
+            "capital": "San Salvador"
+        },
+        {
+            "countryName": "Sint Maarten",
+            "capital": "Philipsburg"
+        },
+        {
+            "countryName": "Syria",
+            "capital": "Damascus"
+        },
+        {
+            "countryName": "Eswatini",
+            "capital": "Mbabane"
+        },
+        {
+            "countryName": "Turks and Caicos Islands",
+            "capital": "Cockburn Town"
+        },
+        {
+            "countryName": "Chad",
+            "capital": "N'Djamena"
+        },
+        {
+            "countryName": "French Southern Territories",
+            "capital": "Port-aux-Français"
+        },
+        {
+            "countryName": "Togo",
+            "capital": "Lomé"
+        },
+        {
+            "countryName": "Thailand",
+            "capital": "Bangkok"
+        },
+        {
+            "countryName": "Tajikistan",
+            "capital": "Dushanbe"
+        },
+        {
+            "countryName": "Timor-Leste",
+            "capital": "Dili"
+        },
+        {
+            "countryName": "Turkmenistan",
+            "capital": "Ashgabat"
+        },
+        {
+            "countryName": "Tunisia",
+            "capital": "Tunis"
+        },
+        {
+            "countryName": "Tonga",
+            "capital": "Nuku'alofa"
+        },
+        {
+            "countryName": "Turkey",
+            "capital": "Ankara"
+        },
+        {
+            "countryName": "Trinidad and Tobago",
+            "capital": "Port of Spain"
+        },
+        {
+            "countryName": "Tuvalu",
+            "capital": "Funafuti"
+        },
+        {
+            "countryName": "Taiwan",
+            "capital": "Taipei"
+        },
+        {
+            "countryName": "Tanzania",
+            "capital": "Dodoma"
+        },
+        {
+            "countryName": "Ukraine",
+            "capital": "Kyiv"
+        },
+        {
+            "countryName": "Uganda",
+            "capital": "Kampala"
+        },
+
+        {
+            "countryName": "United States",
+            "capital": "Washington"
+        },
+        {
+            "countryName": "Uruguay",
+            "capital": "Montevideo"
+        },
+        {
+            "countryName": "Uzbekistan",
+            "capital": "Tashkent"
+        },
+        {
+            "countryName": "Vatican City",
+            "capital": "Vatican City"
+        },
+        {
+            "countryName": "St Vincent and Grenadines",
+            "capital": "Kingstown"
+        },
+        {
+            "countryName": "Venezuela",
+            "capital": "Caracas"
+        },
+        {
+            "countryName": "British Virgin Islands",
+            "capital": "Road Town"
+        },
+        {
+            "countryName": "U.S. Virgin Islands",
+            "capital": "Charlotte Amalie"
+        },
+        {
+            "countryName": "Vietnam",
+            "capital": "Hanoi"
+        },
+        {
+            "countryName": "Vanuatu",
+            "capital": "Port Vila"
+        },
+        {
+            "countryName": "Wallis and Futuna",
+            "capital": "Mata-Utu"
+        },
+        {
+            "countryName": "Samoa",
+            "capital": "Apia"
+        },
+        {
+            "countryName": "Kosovo",
+            "capital": "Pristina"
+        },
+        {
+            "countryName": "Yemen",
+            "capital": "Sanaa"
+        },
+        {
+            "countryName": "Mayotte",
+            "capital": "Mamoudzou"
+        },
+        {
+            "countryName": "South Africa",
+            "capital": "Pretoria"
+        },
+        {
+            "countryName": "Zambia",
+            "capital": "Lusaka"
+        },
+        {
+            "countryName": "Zimbabwe",
+            "capital": "Harare"
+        }
+    ]
+}
