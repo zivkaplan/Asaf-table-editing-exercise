@@ -103,6 +103,7 @@ export default class Table extends React.Component {
     }
 
     addNew(country) {
+        country.index = this.state.data.length;
         axios
             .post('api/countries', country)
             .then((response) => {
