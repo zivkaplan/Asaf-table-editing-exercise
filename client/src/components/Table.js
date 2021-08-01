@@ -26,15 +26,24 @@ export default class Table extends React.Component {
                 console.log(error);
             });
     }
-    save(idx, movie) {
-        console.log(movie);
-        this.setState((st) => ({
-            data: [
-                ...st.data.slice(0, idx),
-                (st.data[idx] = { ...movie }),
-                ...st.data.slice(idx + 1),
-            ],
-        }));
+
+    save(id, updatedCountry) {
+        axios
+            .put(`api/countries/${id}`, updatedCountry)
+            .then((response) => {
+                this.setState((st) => ({
+                    data: st.data.map((country) => {
+                        if (country._id === id) {
+                            country = updatedCountry;
+                        }
+                        return country;
+                    }),
+                }));
+            })
+            .catch((error) => {
+                // handle error
+                console.log(error);
+            });
     }
 
     delete(id) {

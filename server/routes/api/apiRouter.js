@@ -22,6 +22,22 @@ router.post('/', async (req, res) => {
     res.send(newCountry);
 });
 
+// @route PUT api/countries/:id
+// @desc edit a country
+// @access Public
+router.put('/:id', async (req, res) => {
+    try {
+        const { name, capital } = req.body;
+        const item = await Country.findByIdAndUpdate(req.params.id, {
+            name,
+            capital,
+        });
+        res.json({ success: true });
+    } catch (e) {
+        res.status(404).json({ success: false });
+    }
+});
+
 // @route DELETE api/countries/:id
 // @desc delete a country
 // @access Public

@@ -14,16 +14,16 @@ export default class Row extends React.Component {
     }
 
     toggleEdit(id) {
-        this.setState({ ...this.props.movie, isEditing: true });
+        this.setState({ ...this.props.country, isEditing: true });
     }
 
     handleSubmit(e) {
         e.preventDefault();
-        const movie = {
-            title: this.state.title,
-            year: this.state.year,
+        const country = {
+            name: this.state.name,
+            capital: this.state.capital,
         };
-        this.props.save(this.props.idx, movie);
+        this.props.save(this.props.id, country);
         this.setState({ isEditing: false });
     }
 
@@ -49,15 +49,15 @@ export default class Row extends React.Component {
                 <form class="editForm" onSubmit={this.handleSubmit}>
                     <input
                         type="text"
-                        value={this.state.title}
+                        value={this.state.name}
                         onChange={this.handleChange}
-                        name="title"
+                        name="name"
                     />
                     <input
                         type="text"
-                        value={this.state.year}
+                        value={this.state.capital}
                         onChange={this.handleChange}
-                        name="year"
+                        name="capital"
                     />
                     <button className="btn">Save</button>
                 </form>
