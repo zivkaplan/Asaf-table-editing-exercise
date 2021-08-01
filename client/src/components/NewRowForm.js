@@ -26,7 +26,7 @@ export default class NewRowForm extends React.Component {
 
     render() {
         return (
-            <form class="newForm" onSubmit={this.handleSubmit}>
+            <form className="newForm" onSubmit={this.handleSubmit}>
                 <input
                     type="text"
                     value={this.state.name}

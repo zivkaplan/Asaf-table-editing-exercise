@@ -24,10 +24,12 @@ db.once('open', () => {
 });
 
 const seedDb = async () => {
+    let i = 0;
     for (let country of countries) {
         country = new Country({
             name: country.countryName,
             capital: country.capital,
+            index: i++,
         });
         await country.save();
     }

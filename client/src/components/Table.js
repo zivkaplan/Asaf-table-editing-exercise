@@ -29,12 +29,14 @@ export default class Table extends React.Component {
 
     save(id, updatedCountry) {
         axios
-            .put(`api/countries/${id}`, updatedCountry)
+            .put(`api/countries/edit/${id}`, updatedCountry)
             .then((response) => {
                 this.setState((st) => ({
                     data: st.data.map((country) => {
                         if (country._id === id) {
-                            country = updatedCountry;
+                            country.name = updatedCountry.name;
+                            country.capital = updatedCountry.capital;
+                            console.log(country);
                         }
                         return country;
                     }),
@@ -60,32 +62,47 @@ export default class Table extends React.Component {
             });
     }
 
-    move(idx, direction) {
+    move(id, index, direction) {
         if (
-            (idx === 0 && direction === 'up') ||
-            (idx === this.state.data.length - 1 && direction === 'down')
+            (index === 0 && direction === 'up') ||
+            (index === this.state.data.length - 1 && direction === 'down')
         )
             return;
-        if (direction === 'up') {
-            this.setState((st) => ({
-                data: [
-                    ...st.data.slice(0, idx - 1),
-                    st.data[idx],
-                    st.data[idx - 1],
-                    ...st.data.slice(idx + 1),
-                ],
-            }));
-        } else {
-            this.setState((st) => ({
-                data: [
-                    ...st.data.slice(0, idx),
-                    st.data[idx + 1],
-                    st.data[idx],
-                    ...st.data.slice(idx + 2),
-                ],
-            }));
-        }
+        const directionOperation = direction === 'up' ? -1 : 1;
+        const mainCountry = this.state.data.filter((c) => c._id === id)[0];
+        const neighborCountry = this.state.data.filter(
+            (c) => c.index === index + directionOperation
+        )[0];
+        mainCountry.index = index + directionOperation;
+        neighborCountry.index = index;
+
+        axios
+            .put('api/countries/reorder', { mainCountry, neighborCountry })
+            .then((response) => {
+                console.log(response);
+                // if (direction === 'up') {
+                //     this.setState((st) => ({
+                //         data: [
+                //             ...st.data.slice(0, index - 1),
+                //             mainCountry,
+                //             neighborCountry,
+                //             ...st.data.slice(index + 1),
+                //         ],
+                //     }));
+                // } else {
+                //     this.setState((st) => ({
+                //         data: [
+                //             ...st.data.slice(0, index),
+                //             neighborCountry,
+                //             mainCountry,
+                //             ...st.data.slice(index + 2),
+                //         ],
+                //     }));
+                // }
+            })
+            .catch((e) => console.log(e));
     }
+
     addNew(country) {
         axios
             .post('api/countries', country)
@@ -107,6 +124,8 @@ export default class Table extends React.Component {
                     move={this.move}
                     country={country}
                     id={country._id}
+                    index={country.index}
+                    key={country._id}
                 />
             );
         });

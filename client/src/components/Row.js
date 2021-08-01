@@ -5,7 +5,7 @@ import Cell from './Cell';
 export default class Row extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { ...this.props.movie, isEditing: false };
+        this.state = { ...this.props.country, isEditing: false };
         this.toggleEdit = this.toggleEdit.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -13,7 +13,7 @@ export default class Row extends React.Component {
         this.handleMove = this.handleMove.bind(this);
     }
 
-    toggleEdit(id) {
+    toggleEdit(e) {
         this.setState({ ...this.props.country, isEditing: true });
     }
 
@@ -38,15 +38,15 @@ export default class Row extends React.Component {
     }
 
     handleMove(e) {
-        this.props.move(this.props.id, e.target.value);
-        this.setState({ ...this.props.movie, isEditing: false });
+        this.props.move(this.props.id, this.props.index, e.target.value);
+        this.setState({ ...this.props.country, isEditing: false });
     }
 
     render() {
         let renderedCell;
         if (this.state.isEditing) {
             renderedCell = (
-                <form class="editForm" onSubmit={this.handleSubmit}>
+                <form className="editForm" onSubmit={this.handleSubmit}>
                     <input
                         type="text"
                         value={this.state.name}
@@ -75,14 +75,14 @@ export default class Row extends React.Component {
                             value="up"
                             onClick={this.handleMove}
                         >
-                            Move up
+                            &uarr;
                         </button>
                         <button
                             className="arrow"
                             value="down"
                             onClick={this.handleMove}
                         >
-                            Move down
+                            &darr;
                         </button>
                         <button onClick={this.toggleEdit} className="btn">
                             Edit
