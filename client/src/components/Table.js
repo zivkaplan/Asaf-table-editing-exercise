@@ -79,26 +79,26 @@ export default class Table extends React.Component {
         axios
             .put('api/countries/reorder', { mainCountry, neighborCountry })
             .then((response) => {
-                console.log(response);
-                // if (direction === 'up') {
-                //     this.setState((st) => ({
-                //         data: [
-                //             ...st.data.slice(0, index - 1),
-                //             mainCountry,
-                //             neighborCountry,
-                //             ...st.data.slice(index + 1),
-                //         ],
-                //     }));
-                // } else {
-                //     this.setState((st) => ({
-                //         data: [
-                //             ...st.data.slice(0, index),
-                //             neighborCountry,
-                //             mainCountry,
-                //             ...st.data.slice(index + 2),
-                //         ],
-                //     }));
-                // }
+                // after server comformation - change the position on client side in state
+                if (direction === 'up') {
+                    this.setState((st) => ({
+                        data: [
+                            ...st.data.slice(0, index - 1),
+                            mainCountry,
+                            neighborCountry,
+                            ...st.data.slice(index + 1),
+                        ],
+                    }));
+                } else {
+                    this.setState((st) => ({
+                        data: [
+                            ...st.data.slice(0, index),
+                            neighborCountry,
+                            mainCountry,
+                            ...st.data.slice(index + 2),
+                        ],
+                    }));
+                }
             })
             .catch((e) => console.log(e));
     }

@@ -35,14 +35,10 @@ router.put('/edit/:id', async (req, res) => {
 // @access Public
 router.put('/reorder', async (req, res) => {
     try {
-        console.log(req.body);
+        // console.log(req.body);
         const { mainCountry, neighborCountry } = req.body;
-        await Country.findByIdAndUpdate(mainCountry._id, {
-            mainCountry,
-        });
-        await Country.findByIdAndUpdate(neighborCountry._id, {
-            neighborCountry,
-        });
+        await Country.findByIdAndUpdate(mainCountry._id, mainCountry);
+        await Country.findByIdAndUpdate(neighborCountry._id, neighborCountry);
         res.json({ success: true });
     } catch (e) {
         res.status(404).json({ success: false });
