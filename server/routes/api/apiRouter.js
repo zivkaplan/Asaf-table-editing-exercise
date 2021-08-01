@@ -22,4 +22,17 @@ router.post('/', async (req, res) => {
     res.send(newCountry);
 });
 
+// @route DELETE api/countries/:id
+// @desc delete a country
+// @access Public
+router.delete('/:id', async (req, res) => {
+    try {
+        const item = await Country.findById(req.params.id);
+        await item.remove();
+        res.json({ success: true });
+    } catch (e) {
+        res.status(404).json({ success: false });
+    }
+});
+
 module.exports = router;

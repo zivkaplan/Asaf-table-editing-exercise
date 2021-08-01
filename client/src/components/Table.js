@@ -37,11 +37,20 @@ export default class Table extends React.Component {
         }));
     }
 
-    delete(idx) {
-        this.setState((st) => ({
-            data: [...st.data.slice(0, idx), ...st.data.slice(idx + 1)],
-        }));
+    delete(id) {
+        axios
+            .delete(`api/countries/${id}`)
+            .then((response) => {
+                this.setState({
+                    data: this.state.data.filter((c) => c._id !== id),
+                });
+            })
+            .catch((error) => {
+                // handle error
+                console.log(error);
+            });
     }
+
     move(idx, direction) {
         if (
             (idx === 0 && direction === 'up') ||
