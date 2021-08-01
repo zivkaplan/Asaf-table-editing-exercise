@@ -8,10 +8,15 @@ const router = express.Router();
 // @desc add country
 // @access Public
 router.post('/', async (req, res) => {
-    const { name, capital } = req.body;
-    const newCountry = new Country({ name, capital });
-    await newCountry.save();
-    res.send(newCountry);
+    try {
+        const { name, capital, index } = req.body;
+        const newCountry = new Country({ name, capital, index });
+        await newCountry.save();
+        res.send(newCountry);
+    } catch (e) {
+        res.status(404).json({ success: false });
+        console.log(e);
+    }
 });
 
 // @route PUT api/countries/edit/:id
