@@ -13,7 +13,7 @@ export default class Row extends React.Component {
         this.handleMove = this.handleMove.bind(this);
     }
 
-    toggleEdit(idx) {
+    toggleEdit(id) {
         this.setState({ ...this.props.movie, isEditing: true });
     }
 
@@ -34,11 +34,11 @@ export default class Row extends React.Component {
     }
 
     handleDelete(e) {
-        this.props.delete(this.props.idx);
+        this.props.delete(this.props.id);
     }
 
     handleMove(e) {
-        this.props.move(this.props.idx, e.target.value);
+        this.props.move(this.props.id, e.target.value);
         this.setState({ ...this.props.movie, isEditing: false });
     }
 
@@ -66,8 +66,8 @@ export default class Row extends React.Component {
             renderedCell = (
                 <div className="cell">
                     <Cell
-                        title={this.props.movie.title}
-                        year={this.props.movie.year}
+                        name={this.props.country.name}
+                        capital={this.props.country.capital}
                     />
                     <div className="btnDiv">
                         <button

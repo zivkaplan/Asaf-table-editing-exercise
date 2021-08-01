@@ -3,19 +3,19 @@ import React from 'react';
 export default class NewRowForm extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { title: '', year: '' };
+        this.state = { name: '', capital: '' };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleSubmit(e) {
         e.preventDefault();
-        const movie = {
-            title: this.state.title,
-            year: this.state.year,
+        const country = {
+            name: this.state.name,
+            capital: this.state.capital,
         };
-        this.props.addNew(movie);
-        this.setState({ title: '', year: '' });
+        this.props.addNew(country);
+        this.setState({ name: '', capital: '' });
     }
 
     handleChange(e) {
@@ -29,17 +29,17 @@ export default class NewRowForm extends React.Component {
             <form class="newForm" onSubmit={this.handleSubmit}>
                 <input
                     type="text"
-                    value={this.state.title}
+                    value={this.state.name}
                     onChange={this.handleChange}
-                    name="title"
-                    placeholder="Title"
+                    name="name"
+                    placeholder="Country Name"
                 />
                 <input
                     type="text"
-                    value={this.state.year}
+                    value={this.state.capital}
                     onChange={this.handleChange}
-                    name="year"
-                    placeholder="Year"
+                    name="capital"
+                    placeholder="Capital"
                 />
                 <button className="btn">Add</button>
             </form>
