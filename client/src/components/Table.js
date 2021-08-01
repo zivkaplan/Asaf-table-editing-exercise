@@ -1,5 +1,4 @@
 import React from 'react';
-import './Table.css';
 
 import Row from './Row';
 import NewRowForm from './NewRowForm';

@@ -26,7 +26,7 @@ export default class NewRowForm extends React.Component {
 
     render() {
         return (
-            <form className="newForm" onSubmit={this.handleSubmit}>
+            <form className="row newForm" onSubmit={this.handleSubmit}>
                 <input
                     type="text"
                     value={this.state.name}
@@ -41,7 +41,7 @@ export default class NewRowForm extends React.Component {
                     name="capital"
                     placeholder="Capital"
                 />
-                <button className="btn">Add</button>
+                <button className="btn addBtn">Add</button>
             </form>
         );
     }

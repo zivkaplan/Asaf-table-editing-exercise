@@ -1,6 +1,4 @@
 import React from 'react';
-import './Row.css';
-import Cell from './Cell';
 
 export default class Row extends React.Component {
     constructor(props) {
@@ -46,7 +44,7 @@ export default class Row extends React.Component {
         let renderedCell;
         if (this.state.isEditing) {
             renderedCell = (
-                <form className="editForm" onSubmit={this.handleSubmit}>
+                <form className="row editForm" onSubmit={this.handleSubmit}>
                     <input
                         type="text"
                         value={this.state.name}
@@ -64,26 +62,26 @@ export default class Row extends React.Component {
             );
         } else {
             renderedCell = (
-                <div className="cell">
-                    <Cell
-                        name={this.props.country.name}
-                        capital={this.props.country.capital}
-                    />
+                <div className="row">
+                    <div className="name">{this.props.country.name}</div>
+                    <div className="capital">{this.props.country.capital}</div>
                     <div className="btnDiv">
-                        <button
-                            className="arrow"
-                            value="up"
-                            onClick={this.handleMove}
-                        >
-                            &uarr;
-                        </button>
-                        <button
-                            className="arrow"
-                            value="down"
-                            onClick={this.handleMove}
-                        >
-                            &darr;
-                        </button>
+                        <div>
+                            <button
+                                className="arrow"
+                                value="up"
+                                onClick={this.handleMove}
+                            >
+                                &uarr;
+                            </button>
+                            <button
+                                className="arrow"
+                                value="down"
+                                onClick={this.handleMove}
+                            >
+                                &darr;
+                            </button>
+                        </div>
                         <button onClick={this.toggleEdit} className="btn">
                             Edit
                         </button>
