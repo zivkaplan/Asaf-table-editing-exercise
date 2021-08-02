@@ -15,6 +15,7 @@ router.post('/', async (req, res) => {
         res.send(newCountry);
     } catch (e) {
         res.status(404).json({ success: false });
+        console.log(e);
     }
 });
 

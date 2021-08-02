@@ -63,8 +63,8 @@ export default class Table extends React.Component {
 
     move(id, index, direction) {
         if (
-            (index === 0 && direction === 'up') ||
-            (index === this.state.data.length - 1 && direction === 'down')
+            (index <= 0 && direction === 'up') ||
+            (index >= this.state.data.length - 1 && direction === 'down')
         )
             return;
         const directionOperation = direction === 'up' ? -1 : 1;
