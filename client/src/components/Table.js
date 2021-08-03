@@ -35,7 +35,6 @@ export default class Table extends React.Component {
                         if (country._id === id) {
                             country.name = updatedCountry.name;
                             country.capital = updatedCountry.capital;
-                            console.log(country);
                         }
                         return country;
                     }),
@@ -67,12 +66,12 @@ export default class Table extends React.Component {
             (index >= this.state.data.length - 1 && direction === 'down')
         )
             return;
-        const directionOperation = direction === 'up' ? -1 : 1;
-        const mainCountry = this.state.data.filter((c) => c._id === id)[0];
-        const neighborCountry = this.state.data.filter(
-            (c) => c.index === index + directionOperation
-        )[0];
-        mainCountry.index = index + directionOperation;
+        const directionNum = direction === 'up' ? -1 : 1;
+
+        const mainCountry = this.state.data[index];
+        const neighborCountry = this.state.data[index + directionNum];
+
+        mainCountry.index = neighborCountry.index;
         neighborCountry.index = index;
 
         axios
@@ -103,7 +102,7 @@ export default class Table extends React.Component {
     }
 
     addNew(country) {
-        country.index = this.state.data.length;
+        country.index = this.state.data[this.state.data.length - 1].index + 1;
         axios
             .post('api/countries', country)
             .then((response) => {
@@ -116,7 +115,7 @@ export default class Table extends React.Component {
     }
 
     render() {
-        const rows = this.state.data.map((country) => {
+        const rows = this.state.data.map((country, idx) => {
             return (
                 <Row
                     save={this.save}
@@ -124,7 +123,7 @@ export default class Table extends React.Component {
                     move={this.move}
                     country={country}
                     id={country._id}
-                    index={country.index}
+                    index={idx}
                     key={country._id}
                 />
             );
