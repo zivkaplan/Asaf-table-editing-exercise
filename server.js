@@ -1,5 +1,7 @@
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
+} else {
+    app.use(express.static(path.join(__dirname, 'client/build')));
 }
 // imports
 const express = require('express');
