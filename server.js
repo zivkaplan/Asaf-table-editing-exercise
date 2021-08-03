@@ -1,7 +1,5 @@
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
-} else {
-    app.use(express.static(path.join(__dirname, 'client/build')));
 }
 // imports
 const express = require('express');
@@ -38,6 +36,10 @@ const appConfig = (function () {
             },
         }),
     };
+
+    if (process.env.NODE_ENV === 'production') {
+        app.use(express.static(path.join(__dirname, 'client/build')));
+    }
 
     app.use(session(sessionConfig));
 
