@@ -40,9 +40,8 @@ const appConfig = (function () {
     if (process.env.NODE_ENV === 'production') {
         app.use(express.static(path.join(__dirname, 'client/build')));
     }
-    app.use(session(sessionConfig));
 
-    app.set('views', path.join(__dirname, 'views'));
+    app.use(session(sessionConfig));
     app.use(express.urlencoded({ extended: true }));
     app.use(express.json());
 })();
